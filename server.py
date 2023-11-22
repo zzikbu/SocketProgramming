@@ -162,7 +162,7 @@ class Server:
     def make_lotto(self):
         random_list = []
         while len(random_list) != 6:
-            r_number = random.randrange(1, 46, 1)  # 1 ~ 45 로또 번호 생성
+            r_number = random.randrange(1, 11, 1)  # 1 ~ 10 로또 번호 생성
             if r_number not in random_list:
                 random_list.append(r_number)
         random_list.sort()
